@@ -2,6 +2,8 @@
 
 A fun and interactive word-guessing game built to test your vocabulary skills.
 
+[**Play it here!**](https://leonardozambao.github.io/secret-word/)
+
 ## 🚀 Features
 
 - **Dynamic Word Bank**: A wide variety of secret words to discover.
