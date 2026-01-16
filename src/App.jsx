@@ -13,7 +13,7 @@ const stages = [
   { id: 3, name: "end" },
 ];
 
-const guesesQty = 10;
+const guesesQty = 3;
 
 function App() {
   const [gameStage, setGameStage] = useState(stages[0].name);
@@ -90,9 +90,12 @@ function App() {
 
   useEffect(() => {
     const uniqueLetters = [...new Set(letters)];
-    if (guessedLetters.length === uniqueLetters.length) {
+    // Check if uniqueLetters array is not empty to avoid auto-win start
+    if (
+      uniqueLetters.length > 0 &&
+      guessedLetters.length === uniqueLetters.length
+    ) {
       setScore((actualScore) => actualScore + 100);
-      // clearLetterStates();
       startGame();
     }
   }, [guessedLetters, letters, startGame]);
@@ -104,7 +107,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col justify-center items-center py-10">
       {gameStage === "start" && <StartScreen startGame={startGame} />}
       {gameStage === "game" && (
         <Game
@@ -126,7 +129,7 @@ function App() {
           category={pickedCategory}
         />
       )}
-    </>
+    </div>
   );
 }
 
