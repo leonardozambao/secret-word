@@ -1,0 +1,42 @@
+.wordContainer {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  border: solid 15px yellow;
+  padding: 15px;
+}
+
+.blankSquare,
+.letter {
+  font-size: 70px;
+  line-height: 1.5em;
+  border: 3px solid white;
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  min-width: 50px;
+  min-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tip {
+  span {
+    text-decoration: underline;
+    font-weight: 400;
+  }
+}
+
+.letterContainer {
+  display: flex;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.letterContainer input[type="text"] {
+  height: 46px;
+  text-align: center;
+  width: 50px;
+}
