@@ -1,16 +1,42 @@
-# React + Vite
+# Secret Word
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and interactive word-guessing game built to test your vocabulary skills.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dynamic Word Bank**: A wide variety of secret words to discover.
+- **Score Tracking**: Keep track of your wins and streaks.
+- **Responsive Design**: Playable on both desktop and mobile devices.
 
-## React Compiler
+## 🛠️ Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/secret-word.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd secret-word
+   ```
+3. Install the necessary dependencies:
+   ```bash
+   npm install
+   ```
 
-## Expanding the ESLint configuration
+## 🎮 Usage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To start the application in development mode, run:
+
+```bash
+npm start
+```
+
+## 🕹️ How to Play
+
+1. A random secret word is chosen at the start of each round.
+2. Guess letters one by one to reveal the word.
+3. Try to complete the word before your attempts run out!
+
+## 📝 License
+
+This project is licensed under the MIT License.
